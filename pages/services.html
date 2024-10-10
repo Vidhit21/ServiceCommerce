@@ -5,175 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Our Services - SkillServ</title>
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <style>
-      /* Basic Styles for Layout and Appearance */
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: #333;
-      }
-      .navbar .site-name {
-        font-size: 24px;
-        color: #fff;
-        font-weight: bold;
-      }
-      .navbar ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-      }
-      .navbar ul li {
-        margin-left: 20px;
-      }
-      .navbar ul li a {
-        color: #fff;
-        text-decoration: none;
-      }
-      .btn {
-        background-color: #f90;
-        padding: 10px 20px;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-      }
-      .hero {
-        text-align: center;
-        padding: 50px 20px;
-        background-color: #f4f4f4;
-      }
-      .hero h1 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-      }
-      .hero p {
-        font-size: 1.2em;
-        margin-bottom: 20px;
-      }
-      .services {
-        padding: 50px 20px;
-        text-align: center;
-      }
-      .service-grid {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-      }
-      .service-card {
-        width: 30%;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
-        background-color: #fff;
-      }
-      .service-card img {
-        max-width: 100%;
-        height: auto;
-      }
-      footer {
-        background-color: #333;
-        color: #fff;
-        padding: 20px;
-        text-align: center;
-      }
-      .social-links a {
-        color: #fff;
-        margin: 0 10px;
-      }
-    </style>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header Section -->
     <header>
-      <div class="navbar">
-        <div class="site-name">SkillServ</div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="service-history.html">Service History</a></li>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">SkillServ</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service-history.html"
+                >Service History</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
-        </nav>
-        <a href="booking.html" class="btn">Book a Service</a>
-      </div>
+        </div>
+        <a href="booking.html" class="btn btn-warning ml-2">Book a Service</a>
+      </nav>
     </header>
-    
+
     <!-- Hero Section -->
-    <section class="hero">
-      <h1>Our Services</h1>
-      <p>Explore our wide range of services tailored for your needs.</p>
+    <section class="jumbotron text-center bg-light">
+      <div class="container">
+        <h1 class="display-4">Our Services</h1>
+        <p class="lead">
+          Explore our wide range of services tailored for your needs.
+        </p>
+      </div>
     </section>
 
     <!-- Service Categories Section -->
-    <section class="services">
-      <h2>Available Services</h2>
-      <div class="service-grid">
-        <div class="service-card">
-          <img src="https://via.placeholder.com/150" alt="Electrician" />
-          <h3>Electricians</h3>
-          <p>
-            Our qualified electricians are available to handle all your electrical needs, from installations to repairs.
-          </p>
+    <section class="container py-5">
+      <h2 class="text-center mb-4">Available Services</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Electrician"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Electricians</h5>
+              <p class="card-text">
+                Our qualified electricians are available to handle all your
+                electrical needs, from installations to repairs.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="service-card">
-          <img src="https://via.placeholder.com/150" alt="Plumber" />
-          <h3>Plumbers</h3>
-          <p>
-            Expert plumbers ready to fix leaks, install new systems, and provide maintenance services.
-          </p>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Plumber"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Plumbers</h5>
+              <p class="card-text">
+                Expert plumbers ready to fix leaks, install new systems, and
+                provide maintenance services.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="service-card">
-          <img src="https://via.placeholder.com/150" alt="Repairmen" />
-          <h3>Repairmen</h3>
-          <p>
-            Get your appliances and home items fixed by our skilled professionals, ensuring quality service every time.
-          </p>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Repairmen"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Repairmen</h5>
+              <p class="card-text">
+                Get your appliances and home items fixed by our skilled
+                professionals, ensuring quality service every time.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="service-card">
-          <img src="https://via.placeholder.com/150" alt="Cleaning" />
-          <h3>Cleaning Services</h3>
-          <p>
-            Professional cleaning services for your home and office, ensuring a spotless environment.
-          </p>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Cleaning"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cleaning Services</h5>
+              <p class="card-text">
+                Professional cleaning services for your home and office,
+                ensuring a spotless environment.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="service-card">
-          <img src="https://via.placeholder.com/150" alt="Handyman" />
-          <h3>Handyman Services</h3>
-          <p>
-            Reliable handyman services for small repairs and improvements around your home.
-          </p>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Handyman"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Handyman Services</h5>
+              <p class="card-text">
+                Reliable handyman services for small repairs and improvements
+                around your home.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="service-card">
-          <img src="https://via.placeholder.com/150" alt="Landscaping" />
-          <h3>Landscaping</h3>
-          <p>
-            Transform your outdoor space with our landscaping services, tailored to your preferences.
-          </p>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Landscaping"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Landscaping</h5>
+              <p class="card-text">
+                Transform your outdoor space with our landscaping services,
+                tailored to your preferences.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer>
-      <p>&copy; 2024 Service Provider. All rights reserved.</p>
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-4">
+      <p>&copy; 2024 SkillServ. All rights reserved.</p>
       <p>
         Contact us:
-        <a href="mailto:info@serviceprovider.com">info@serviceprovider.com</a>
+        <a href="mailto:info@serviceprovider.com" class="text-white"
+          >info@serviceprovider.com</a
+        >
       </p>
-      <div class="social-links">
-        <a href="#">Facebook</a> | <a href="#">Twitter</a> | 
-        <a href="#">Instagram</a>
+      <div>
+        <a href="#" class="text-white mx-2">Facebook</a> |
+        <a href="#" class="text-white mx-2">Twitter</a> |
+        <a href="#" class="text-white mx-2">Instagram</a>
       </div>
     </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
