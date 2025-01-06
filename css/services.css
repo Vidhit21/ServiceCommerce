@@ -1,0 +1,243 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hero Section */
+#hero {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 0;
+}
+
+#hero .display-4 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#hero .lead {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+#hero .btn {
+  background-color: #ec8305;
+  color: white;
+  border: none;
+}
+
+#hero .btn:hover {
+  background-color: #024caa;
+  color: white;
+}
+
+/* Services Section */
+#services {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.service-description {
+  font-size: 1rem;
+  color: #555;
+}
+
+.service-btn {
+  margin-top: 1rem;
+  text-align: center;
+  background-color: #024caa;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.service-btn:hover {
+  background-color: #ec8305;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Footer Section */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .container {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  #hero .display-4 {
+    font-size: 2.5rem;
+  }
+
+  #hero .lead {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575px) {
+  #services h2 {
+    font-size: 2rem;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Services Scrollable Container */
+.services-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 30px; /* Adds space at the bottom for the scroll */
+    gap: 20px;
+  }
+  
+  .services-scroll-container .row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .service-card {
+    flex: 0 0 auto;
+    width: 300px; /* Card width, adjust as per design */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .service-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .service-btn {
+    margin-top: 1rem;
+    text-align: center;
+    background-color: #024caa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  .service-btn:hover {
+    background-color: #ec8305;
+  }
+  

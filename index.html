@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuickFixers - Home Services</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="https://via.placeholder.com/150x50"
+            alt="QuickFixers Logo"
+            class="img-fluid"
+            style="max-height: 40px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="hero bg-primary text-white py-5"
+      style="
+        background-image: url('https://via.placeholder.com/1500x800');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-8 col-lg-6">
+            <h1 class="display-4 fw-bold">QuickFixers</h1>
+            <p class="lead mb-4">
+              Your Technological Partner for Home, Office, and More
+            </p>
+            <a href="#services" class="btn btn-light btn-lg"
+              >Explore Services</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+          <!-- Service 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://via.placeholder.com/500x300"
+                class="card-img-top"
+                alt="Home Services"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Home Services</h5>
+                <p class="card-text">
+                  Electricians, plumbers, cleaning, and more. We provide
+                  high-quality services for your home.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Service 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://via.placeholder.com/500x300"
+                class="card-img-top"
+                alt="Office Services"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Office Services</h5>
+                <p class="card-text">
+                  Technical support, repairs, and maintenance. Keep your office
+                  running smoothly with our services.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Service 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="https://via.placeholder.com/500x300"
+                class="card-img-top"
+                alt="Restaurant Services"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Restaurant Services</h5>
+                <p class="card-text">
+                  Setup, cleaning, and technical assistance. We ensure your
+                  restaurant functions efficiently.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">What Our Clients Say</h2>
+
+        <!-- Bootstrap Carousel for Testimonials -->
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active">
+              <div class="d-flex justify-content-center mb-4">
+                <img
+                  src="https://via.placeholder.com/100"
+                  alt="Client 1"
+                  class="rounded-circle me-3"
+                  style="width: 80px; height: 80px"
+                />
+                <div>
+                  <h5>John Doe</h5>
+                  <p class="text-muted">Homeowner</p>
+                </div>
+              </div>
+              <p class="text-center">
+                "QuickFixers were amazing! They handled all our electrical and
+                plumbing needs efficiently. Highly recommend!"
+              </p>
+              <div class="text-center">
+                <span class="text-warning"
+                  >&#9733;&#9733;&#9733;&#9733;&#9733;</span
+                >
+                <!-- Star rating -->
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center mb-4">
+                <img
+                  src="https://via.placeholder.com/100"
+                  alt="Client 2"
+                  class="rounded-circle me-3"
+                  style="width: 80px; height: 80px"
+                />
+                <div>
+                  <h5>Jane Smith</h5>
+                  <p class="text-muted">Business Owner</p>
+                </div>
+              </div>
+              <p class="text-center">
+                "The team at QuickFixers helped me set up my office equipment
+                and provided seamless technical support. Fantastic service!"
+              </p>
+              <div class="text-center">
+                <span class="text-warning"
+                  >&#9733;&#9733;&#9733;&#9733;&#9734;</span
+                >
+                <!-- Star rating -->
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center mb-4">
+                <img
+                  src="https://via.placeholder.com/100"
+                  alt="Client 3"
+                  class="rounded-circle me-3"
+                  style="width: 80px; height: 80px"
+                />
+                <div>
+                  <h5>Mark Johnson</h5>
+                  <p class="text-muted">Restaurant Owner</p>
+                </div>
+              </div>
+              <p class="text-center">
+                "QuickFixers handled all the maintenance for my restaurant.
+                Their team was quick and professional. I will definitely use
+                them again!"
+              </p>
+              <div class="text-center">
+                <span class="text-warning"
+                  >&#9733;&#9733;&#9733;&#9733;&#9733;</span
+                >
+                <!-- Star rating -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FAQ Section -->
+    <section id="faq" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+
+        <!-- Accordion for FAQ -->
+        <div class="accordion" id="faqAccordion">
+          <!-- FAQ 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                What services do QuickFixers provide?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                QuickFixers offers a wide range of services including home
+                repairs, plumbing, electrical services, office maintenance, and
+                restaurant setup, cleaning, and support. Our team of skilled
+                professionals is dedicated to providing top-quality service.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                How do I book a service with QuickFixers?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Booking a service with QuickFixers is easy. Simply visit our
+                website, navigate to the "Services" section, choose the service
+                you require, and fill out the booking form with your details.
+                You will be contacted by our team for further instructions.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Are the technicians at QuickFixers certified?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, all of our technicians are highly skilled and certified in
+                their respective fields. We ensure that our team members are
+                well-trained to handle all kinds of service requests, ensuring
+                high-quality service every time.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                What are your payment options?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                We offer a variety of payment options for your convenience,
+                including credit/debit cards, net banking, and payment via UPI.
+                You can choose the most suitable payment method when booking
+                your service.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Do you offer emergency services?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, QuickFixers provides emergency services for urgent repair
+                needs. Whether it's a plumbing issue, electrical problem, or
+                anything that requires immediate attention, our team is ready to
+                assist you at any time.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Blog Section -->
+    <section id="blog" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Latest Blog Posts</h2>
+        <div class="row">
+          <!-- Blog Post 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+              <img
+                src="https://via.placeholder.com/500x300"
+                class="card-img-top"
+                alt="Blog Post 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  How to Choose the Right Home Service Provider
+                </h5>
+                <p class="card-text">
+                  Finding the right home service provider can be tricky. This
+                  guide offers tips on what to look for when choosing
+                  professionals for your home repairs, cleaning, and
+                  maintenance.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Post 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+              <img
+                src="https://via.placeholder.com/500x300"
+                class="card-img-top"
+                alt="Blog Post 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Tips for Maintaining Your Office Equipment
+                </h5>
+                <p class="card-text">
+                  Regular maintenance of office equipment can save you money and
+                  downtime. Learn some simple tips to keep your devices running
+                  smoothly and avoid costly repairs.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Post 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+              <img
+                src="https://via.placeholder.com/500x300"
+                class="card-img-top"
+                alt="Blog Post 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Why Your Restaurant Needs Regular Maintenance
+                </h5>
+                <p class="card-text">
+                  Restaurants require regular maintenance to stay functional and
+                  provide a great experience for customers. Discover the
+                  importance of upkeep for restaurant success.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- More Blog Posts Button -->
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-secondary">View All Posts</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Partners Section -->
+    <section id="partners" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Trusted Partners</h2>
+        <div class="row justify-content-center">
+          <!-- Partner 1 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="partner-logo">
+              <img
+                src="https://via.placeholder.com/150x60"
+                alt="Partner 1"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <!-- Partner 2 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="partner-logo">
+              <img
+                src="https://via.placeholder.com/150x60"
+                alt="Partner 2"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <!-- Partner 3 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="partner-logo">
+              <img
+                src="https://via.placeholder.com/150x60"
+                alt="Partner 3"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <!-- Partner 4 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="partner-logo">
+              <img
+                src="https://via.placeholder.com/150x60"
+                alt="Partner 4"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <!-- Partner 5 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="partner-logo">
+              <img
+                src="https://via.placeholder.com/150x60"
+                alt="Partner 5"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <!-- Partner 6 -->
+          <div class="col-md-3 col-sm-6 mb-4">
+            <div class="partner-logo">
+              <img
+                src="https://via.placeholder.com/150x60"
+                alt="Partner 6"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        
+        <!-- Column 1: About QuickFixers -->
+        <div class="col-md-4 mb-3">
+          <h5>About QuickFixers</h5>
+          <p>
+            QuickFixers provides reliable home, office, and restaurant services, 
+            including electricians, plumbers, cleaning, and more. 
+            Our team ensures top-quality services to meet all your needs.
+          </p>
+        </div>
+        
+        <!-- Column 2: Contact Information -->
+        <div class="col-md-4 mb-3">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-envelope-fill"></i> <a href="mailto:pvidhit21@gmail.com" class="text-white">pvidhit21@gmail.com</a></li>
+            <li><i class="bi bi-phone-fill"></i> +91 123 456 7890</li>
+            <li><i class="bi bi-geo-alt-fill"></i> Gujarat, India</li>
+          </ul>
+        </div>
+  
+        <!-- Column 3: Social Media Links -->
+        <div class="col-md-4 mb-3">
+          <h5>Follow Us</h5>
+          <ul class="list-unstyled d-flex">
+            <li><a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Divider -->
+      <hr class="border-top border-white" />
+  
+      <!-- Footer Bottom -->
+      <div class="text-center">
+        <p>&copy; 2025 QuickFixers. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

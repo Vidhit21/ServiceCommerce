@@ -1,0 +1,16 @@
+    /* Hover Effect */
+    .nav-link:hover {
+        color: #EC8305 !important; /* Highlight color */
+        transition: color 0.3s ease;
+    }
+
+    /* Active Link */
+    .nav-item.active .nav-link {
+        color: #024CAA !important; /* Active link color */
+        font-weight: bold;
+    }
+
+    /* Sticky Navbar */
+    .navbar {
+        z-index: 9999; /* Ensure it stays on top */
+    }

@@ -1,0 +1,105 @@
+/* Service Details Page Styles */
+#service-details {
+    background-color: #f8f9fa;
+  }
+  
+  .service-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #024caa;
+  }
+  
+  .service-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  ul {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .service-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ec8305;
+  }
+  
+  .modal-body form input,
+  .modal-body form textarea {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .modal-body form button {
+    background-color: #024caa;
+    color: #fff;
+  }
+  
+  .modal-body form button:hover {
+    background-color: #ec8305;
+  }
+  
+  img {
+    border-radius: 10px;
+  }
+  
+  .modal-body form input,
+  .modal-body form textarea,
+  .modal-body form button {
+    margin-bottom: 15px;
+}
+
+
+/* Service Cards Styling */
+.service-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .service-btn {
+    background-color: #024CAA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-btn:hover {
+    background-color: #EC8305;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #091057;
+    text-transform: uppercase;
+  }
+  
+  /* Additional Styling for Pricing */
+  .service-card p strong {
+    font-size: 1.2rem;
+    color: #024CAA;
+  }
+  
